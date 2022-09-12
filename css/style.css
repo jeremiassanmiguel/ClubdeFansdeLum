@@ -1,0 +1,538 @@
+*{
+    margin: 0%;
+padding: 0%;}
+/* BODY BACKGROUND */
+body{
+    background-image: linear-gradient(
+        100deg,
+        hsl(180deg 66% 53%) 0%,
+        hsl(202deg 100% 38%) 49%,
+        hsl(267deg 85% 23%) 100%
+      );    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    background-color: rgb(0,0,73);
+   
+
+}
+/* HEADER */
+#BarraNavegacion ul{
+    
+    display: flex;
+     justify-content: space-evenly;
+     border: 5px rgb(240, 186, 39);
+     border-style: groove;
+     border-radius: 10px;
+     background-color: rgb(0, 0, 0);
+     }
+
+#BarraNavegacion ul li a{
+    text-decoration: none;
+     font-size: 25px;
+     color: white;
+}
+
+header .Banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header .Banner .BannerMobile {
+    display: none;
+}
+
+
+/* INDEX */
+.TituloIndex {
+display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: aliceblue; 
+    align-items: flex-end; 
+    font-size: 70px;
+    text-shadow: -2px -2px 1px rgb(240, 186, 39), 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+    transition: all 2s;
+}
+
+.TituloIndex:hover{
+    transform:scale(2);
+
+}
+
+.ImagenTitulo{
+    background-image:url(/pages/img/titulo-banner.jpg)
+}
+       
+
+
+
+.IntroduccionIndex{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.IntroduccionIndex h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: aliceblue;
+    text-align:center;
+    background-color: rgba(0, 0, 76, 0.582);
+    border: 5px rgb(240, 186, 39);
+    border-style: groove;
+    border-radius: 30px;
+    align-items: center;
+    
+
+
+}
+.ImgIndex1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border: 5px rgb(240, 186, 39);
+    border-style: groove;
+    border-radius: 100px;
+}
+
+.TrailerIndex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center 
+    
+}
+
+.TrailerIndex h1{
+    display: flex;
+    flex-direction:row;
+    color: aliceblue;
+    background-color: rgba(0, 0, 76, 0.582);
+    border: 5px rgb(240, 186, 39);
+    border-style: groove;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+iframe{
+    border: 5px rgb(240, 186, 39);
+    border-style: groove;
+    border-radius: 10px;
+}
+
+
+.ImgIndex2{
+    border-radius: 20px;
+    border: 5px rgb(167, 74, 128) outset;
+}
+
+.Rumiko{
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    flex-wrap:wrap ;
+    
+}
+
+.RumikoImg h2{
+    text-align: center;
+    color: aliceblue;
+    font-size: 40px;
+    text-shadow: -2px -2px 1px rgb(240, 186, 39), 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+}
+
+
+.RumikoTxt p{
+    display: flex;     
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    color: aliceblue;
+    font-size: 25px;
+    text-shadow: -2px -2px 1px rgb(0, 0, 0), 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+    text-align: center;
+    background-color: rgba(167, 74, 128, 0.849);
+    border: 5px rgb(124, 45, 91) outset;
+}
+
+/* GALERÍA */
+.TituloGaleria{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: aliceblue; 
+    align-items:center; 
+    font-size: 50px;
+    text-shadow: -2px -2px 1px rgb(240, 186, 39), 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+    }
+
+    .Galeria{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "ImgGaleria1" "ImgGaleria2"
+        "ImgGaleria3" "ImgGaleria4"
+        "ImgGaleria5" "ImgGaleria6";
+        justify-items: center;
+    }
+
+    .ImgGaleria1{
+        grid-area: "ImgGaleria1";
+        border: 5px rgb(240, 186, 39);
+    border-style: groove;
+    border-radius: 10px;
+    }
+
+    .ImgGaleria2{
+        grid-area: "ImgGaleria2";
+        border: 5px rgb(240, 186, 39);
+    border-style: groove;
+    border-radius: 10px;
+    }
+
+    .ImgGaleria3{
+        grid-area: "ImgGaleria3";
+        border: 5px rgb(240, 186, 39);
+    border-style: groove;
+    border-radius: 10px;
+    }
+
+    .ImgGaleria4{
+        grid-area: "ImgGaleria4";
+        border: 5px rgb(240, 186, 39);
+    border-style: groove;
+    border-radius: 10px;
+    }
+
+    .ImgGaleria5{
+        grid-area: "ImgGaleria5";
+        border: 5px rgb(240, 186, 39);
+    border-style: groove;
+    border-radius: 10px;
+    }
+
+    .ImgGaleria6{
+        grid-area: "ImgGaleria6";
+        border: 5px rgb(240, 186, 39);
+    border-style: groove;
+    border-radius: 10px;
+    }
+    
+    .GaleriaVideos{
+            display: grid;
+            grid-auto-columns: 1fr; 
+            grid-template-columns: 1fr 1fr; 
+            grid-template-rows: 1fr 1fr; 
+            gap: 0px 0px; 
+            grid-template-areas: 
+             "VIDEO1 VIDEO2"
+             "VIDEO3 VIDEO4";
+            justify-items: center;
+            align-items: center;
+         }
+
+        .VideoGaleria1{
+            grid-area: "VIDEO1";
+        }
+
+        .VideoGaleria2{
+            grid-area: "VIDEO2";
+        }
+
+        .VideoGaleria2{
+            grid-area: "VIDEO3";
+        }
+
+        .VideoGaleria1{
+            grid-area: "VIDEO4";
+        }
+    ----- 
+
+    /* VER ONLINE */
+
+    .TituloVerOnline{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center 
+        }
+
+        .TituloVerOnline p{
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            color: aliceblue; 
+            align-items: flex-end; 
+            font-size: 70px;
+            text-shadow: -1px -1px 1px rgb(240, 186, 39), 1px 1px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+        }
+
+
+.TablaComparativa{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 5px rgb(240, 186, 39);
+    border-style: groove;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(0,0,73);
+    text-decoration-line: none;
+    font-size: 25px;
+}
+
+.TablaComparativaTxT{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    color: aliceblue;
+    background-color: rgb(0, 0, 76, 0.582);
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.TxtVerOnline{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 5px rgb(240, 186, 39);
+    border-style: groove;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(0, 0, 76, 0.582);
+    text-decoration-line: none;
+    font-size: 20px;
+}
+
+
+.ListaRepro1{
+    display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: aliceblue; 
+        align-items: flex-end; 
+        font-size: 25px;
+        text-shadow: -1px -1px 1px rgb(240, 186, 39), 1px 1px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+}
+
+.VidVerOnline{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    color: aliceblue;
+    background-color: rgba(0, 0, 76, 0.582);
+    text-align: center;
+}
+
+.ListaRepro2{
+    display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: aliceblue; 
+        align-items: flex-end; 
+        font-size: 25px;
+        text-shadow: -1px -1px 1px rgb(240, 186, 39), 1px 1px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+}
+/*ACERCA DE*/
+
+.TituloAcerca{
+    display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap
+     }
+ .TituloAcerca h1{
+    text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            color: aliceblue; 
+            align-items: flex-end; 
+            font-size:50px;
+            text-shadow: -1px -1px 1px rgb(240, 186, 39), 1px 1px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+ }
+
+ .AcercaTxt{
+    display: flex;     
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    color: aliceblue;
+    font-size: 25px;
+    text-shadow: -2px -2px 1px rgb(0, 0, 0), 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+    text-align: center;
+ }
+
+ .AcercaTxt img{
+    border: 5px rgb(240, 186, 39);
+    border-style: groove;
+    border-radius: 10px;
+ }
+
+ .AcercaRedes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(167, 74, 128, 0.849);
+    border: 5px rgb(124, 45, 91) outset;
+        color: aliceblue;
+      text-shadow: 1px 1px 0 black, 1px -1px 0px black;
+ }
+.AcercaRedes a{
+    text-decoration: none;
+    color: aliceblue;
+      text-shadow: 1px 1px 0 black, 1px -1px 0px black;
+    }
+
+ .AcercaRedes .ImgGrupoFB{
+    display: flex;
+    flex-direction: row;
+ }
+
+ .GpsLum{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+        color: aliceblue;
+      text-shadow: 1px 1px 0 black, 1px -1px 0px black;
+      font-size: 25px;
+ }
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+.BotonVolver {
+    position: fixed;
+    top: 0; 
+    height: 50px;
+    padding: 0.5em; 
+    }
+
+.BotonVolver li a{
+    border: 5px rgb(240, 186, 39);
+    border-style: groove;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    text-decoration-line: none;
+    font-size: 25px;
+}
+
+.IrArriba{
+    border: 5px rgb(240, 186, 39);
+    border-style: groove;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    text-decoration-line: none;
+    font-size: 25px;
+}
+
+
+
+/*MEDIA QUERIES*/ 
+
+@media only screen and (max-width: 768px) {
+/* HEADER MOBILE*/
+header .Banner .BannerMobile{
+    display: none;
+}
+.TituloIndexMob{
+    display: none;
+}
+}
+
+@media only screen and (max-width: 576px){
+
+    /*HEADER MOBILE*/
+    .TituloIndex{
+        display: none;
+    }
+
+    .Banner img{
+        display: none;
+    }
+
+    header .Banner .BannerMobile{
+        display: block;
+        background-color: hsl(180deg 66% 53%) 0%,
+        hsl(202deg 100% 38%) 49%,
+        hsl(267deg 85% 23%) 100%;
+        width: 200px;
+        height: 200px;
+     }
+    
+    .TituloIndexMob{
+        display: block;
+        flex-direction: row;
+    justify-content: center;
+    color: aliceblue; 
+    align-items: flex-end; 
+    font-size: 70px;
+    text-shadow: -2px -2px 1px rgb(240, 186, 39), 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+    }
+     /*INDEX*/
+
+    .IntroduccionIndex{
+        flex-direction: column;
+    }
+
+
+
+    /*GALERÍA MOBILE*/
+
+    .Galeria{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .GaleriaVideos{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin: 0;
+    }
+   /*ACERCA MOBILE*/
+   .TituloAcerca h1{
+    flex-direction: column;
+    justify-content: space-between;
+   }
+
+   .AcercaTxt{
+    flex-direction: column;
+    align-content: flex-end;
+    font-size: 20px;
+   }
+
+    .AcercaRedes{
+        flex-direction: column;
+    }
+
+
+    
+
+}
+
+
+
+
