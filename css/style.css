@@ -43,6 +43,15 @@ header .Banner .BannerMobile {
     display: none;
 }
 
+.BannerImg{
+    background-image:url(/pages/img/titulo-banner.jpg);
+    transition: all 2s;
+}
+
+.BannerImg:hover{
+    transform:scale(2);
+}
+
 
 /* INDEX */
 .TituloIndex {
@@ -53,16 +62,16 @@ display: flex;
     align-items: flex-end; 
     font-size: 70px;
     text-shadow: -2px -2px 1px rgb(240, 186, 39), 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
-    transition: all 2s;
-}
-
-.TituloIndex:hover{
-    transform:scale(2);
-
+    
 }
 
 .ImagenTitulo{
-    background-image:url(/pages/img/titulo-banner.jpg)
+    background-image:url(/pages/img/titulo-banner.jpg);
+    transition: all 2s;
+}
+
+.ImagenTitulo:hover{
+transform:scale(2);
 }
        
 
