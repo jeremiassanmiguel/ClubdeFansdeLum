@@ -75,64 +75,10 @@ margin: 10px;}
     -----
 
     .container .containerpropio{
-        justify-content:space-between;
+        display: flex;
+        flex-direction: row;
     }
 
-
-    -----
-
-    .Galeria{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas:
-        "ImgGaleria1" "ImgGaleria2"
-        "ImgGaleria3" "ImgGaleria4"
-        "ImgGaleria5" "ImgGaleria6";
-        justify-items: center;
-    }
-
-    .ImgGaleria1{
-        grid-area: "ImgGaleria1";
-        border: 5px rgb(240, 186, 39);
-    border-style: groove;
-    border-radius: 10px;
-    }
-
-    .ImgGaleria2{
-        grid-area: "ImgGaleria2";
-        border: 5px rgb(240, 186, 39);
-    border-style: groove;
-    border-radius: 10px;
-    }
-
-    .ImgGaleria3{
-        grid-area: "ImgGaleria3";
-        border: 5px rgb(240, 186, 39);
-    border-style: groove;
-    border-radius: 10px;
-    }
-
-    .ImgGaleria4{
-        grid-area: "ImgGaleria4";
-        border: 5px rgb(240, 186, 39);
-    border-style: groove;
-    border-radius: 10px;
-    }
-
-    .ImgGaleria5{
-        grid-area: "ImgGaleria5";
-        border: 5px rgb(240, 186, 39);
-    border-style: groove;
-    border-radius: 10px;
-    }
-
-    .ImgGaleria6{
-        grid-area: "ImgGaleria6";
-        border: 5px rgb(240, 186, 39);
-    border-style: groove;
-    border-radius: 10px;
-    }
     
     .GaleriaVideos{
             display: grid;
