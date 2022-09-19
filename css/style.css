@@ -62,25 +62,61 @@ margin: 10px;}
 
 
 /* GALERÍA */
-.TituloGaleria{
+.Txt1{
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    color: aliceblue; 
-    align-items:center; 
-    font-size: 50px;
-    text-shadow: -2px -2px 1px rgb(240, 186, 39), 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
-    }
+    align-items: center;
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    margin: 30px;
+}
 
-    -----
 
-    .container .containerpropio{
-        display: flex;
-        flex-direction: row;
-    }
+.GaleriaFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
 
-    
-    .GaleriaVideos{
+.GaleriaFlex .GaleriaImg1 img{
+    margin: 30px;
+    border: 5px black;
+    border-radius: 20px;
+}
+
+.GaleriaFlex .GaleriaImg2 img{
+    margin: 30px;
+    border: 5px black;
+    border-radius: 20px;
+}
+
+.GaleriaFlex .GaleriaImg3 img{
+    margin: 30px;
+      border: 5px black;
+    border-radius: 20px;
+}
+
+.GaleriaFlex .GaleriaImg4 img{
+    margin: 30px;
+    border: 5px black;
+    border-radius: 20px;
+}
+
+.GaleriaFlex .GaleriaImg5 img{
+    margin: 30px;
+    border: 5px black;
+    border-radius: 20px;
+}
+
+.GaleriaFlex .GaleriaImg6 img{
+    margin: 30px;
+    border: 5px black;
+    border-radius: 20px;
+}
+
+.GaleriaVideos{
             display: grid;
             grid-auto-columns: 1fr; 
             grid-template-columns: 1fr 1fr; 
@@ -91,6 +127,7 @@ margin: 10px;}
              "VIDEO3 VIDEO4";
             justify-items: center;
             align-items: center;
+            font-family: 'Manrope', sans-serif;
          }
 
         .VideoGaleria1{
@@ -112,37 +149,15 @@ margin: 10px;}
 
     /* VER ONLINE */
 
-    .TituloVerOnline{
+    .IndexVerOnline{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        align-items: center 
-        }
-
-        .TituloVerOnline p{
-            text-align: center;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            color: aliceblue; 
-            align-items: flex-end; 
-            font-size: 70px;
-            text-shadow: -1px -1px 1px rgb(240, 186, 39), 1px 1px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
-        }
-
-
-.TablaComparativa{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border: 5px rgb(240, 186, 39);
-    border-style: groove;
-    border-radius: 10px;
-    color: white;
-    background-color: rgb(0,0,73);
-    text-decoration-line: none;
-    font-size: 25px;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Manrope', sans-serif;
+        margin: 30px;
 }
+
 
 .TablaComparativaTxT{
     display: flex;
@@ -152,20 +167,28 @@ margin: 10px;}
     background-color: rgb(0, 0, 76, 0.582);
     text-align: center;
     font-size: 20px;
+    font-family: 'Manrope', sans-serif;
+    margin: 30px;
 
+}
+
+.table{
+    background-color: rgb(0, 0, 76, 0.582);
 }
 
 .TxtVerOnline{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border: 5px rgb(240, 186, 39);
+    border: 2px rgb(0, 0, 0);
     border-style: groove;
     border-radius: 10px;
     color: white;
     background-color: rgba(0, 0, 76, 0.582);
     text-decoration-line: none;
     font-size: 20px;
+    font-family: 'Manrope', sans-serif;
+    margin: 30px;
 }
 
 
@@ -173,30 +196,30 @@ margin: 10px;}
     display: flex;
         flex-direction: row;
         justify-content: center;
-        color: aliceblue; 
         align-items: flex-end; 
         font-size: 25px;
-        text-shadow: -1px -1px 1px rgb(240, 186, 39), 1px 1px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+                font-family: 'Manrope', sans-serif;
+                margin: 30px;
 }
 
 .VidVerOnline{
     display: flex;
     flex-direction:row;
     justify-content: center;
-    color: aliceblue;
-    background-color: rgba(0, 0, 76, 0.582);
     text-align: center;
+    font-family: 'Manrope', sans-serif;
+    margin: 30px;
 }
 
 .ListaRepro2{
     display: flex;
         flex-direction: row;
         justify-content: center;
-        color: aliceblue; 
         align-items: flex-end; 
         font-size: 25px;
-        text-shadow: -1px -1px 1px rgb(240, 186, 39), 1px 1px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
-}
+        font-family: 'Manrope', sans-serif;
+        margin: 30px;
+    }
 /*ACERCA DE*/
 
 .TituloAcerca{
@@ -204,18 +227,16 @@ margin: 10px;}
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap
-     }
- .TituloAcerca h1{
-    text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            color: aliceblue; 
-            align-items: flex-end; 
-            font-size:50px;
-            text-shadow: -1px -1px 1px rgb(240, 186, 39), 1px 1px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
- }
+        flex-wrap: wrap;
+        font-family: 'Manrope', sans-serif;
+        margin: 60px;
+    }
+
+    .TituloAcerca h1{
+        font-size: 70px;
+    }
+
+ 
 
  .AcercaTxt{
     display: flex;     
@@ -223,49 +244,51 @@ margin: 10px;}
     justify-content: center;
     align-items: center;
     height: 300px;
-    color: aliceblue;
-    font-size: 25px;
-    text-shadow: -2px -2px 1px rgb(0, 0, 0), 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+    font-size: 35px;
     text-align: center;
+    font-family: 'Manrope', sans-serif;
+    margin: 60px;
+    font-weight: bolder;
  }
 
- .AcercaTxt img{
-    border: 5px rgb(240, 186, 39);
-    border-style: groove;
-    border-radius: 10px;
- }
 
  .AcercaRedes {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background-color: rgba(167, 74, 128, 0.849);
-    border: 5px rgb(124, 45, 91) outset;
-        color: aliceblue;
-      text-shadow: 1px 1px 0 black, 1px -1px 0px black;
+      font-family: 'Manrope', sans-serif;
+      text-align: center;
+      margin: 120px;
+ }
+
+ .AcercaRedes .Facebook h3{
+    margin: 60px;
  }
 .AcercaRedes a{
     text-decoration: none;
-    color: aliceblue;
-      text-shadow: 1px 1px 0 black, 1px -1px 0px black;
-    }
+      font-family: 'Manrope', sans-serif;
+     }
 
- .AcercaRedes .ImgGrupoFB{
-    display: flex;
-    flex-direction: row;
- }
+     .AcercaRedes .Facebook img{
+        border-radius: 20px;
 
+     }
+
+ 
  .GpsLum{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-        color: aliceblue;
-      text-shadow: 1px 1px 0 black, 1px -1px 0px black;
       font-size: 25px;
+      font-family: 'Manrope', sans-serif;
  }
 
+ .GpsLum iframe{
+    border-radius: 30px;
+
+ }
 
 
 
