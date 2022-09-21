@@ -1,0 +1,46 @@
+@import 'components/mixin';
+@import 'components/variables';
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #E0EAFC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+/** INDEX **/
+
+
+.Banner{
+    margin-bottom: 60px;
+}
+
+
+.IndexText1{
+    
+    .ImgIndexText1{
+        border-radius: $estilo-imagen;
+        
+    }
+    @include div_titulos
+}
+
+.IndexText2{
+   
+     margin-bottom: 60px;
+     @include div_titulos
+    
+    }
+     
+.IndexText3{
+    margin: $margin;
+    @include div_titulos
+}
+
+.BotonSubir{
+    @include boton_subir
+}
+
+
