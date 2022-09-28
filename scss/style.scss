@@ -40,7 +40,20 @@ body{
 }
 
 .BotonSubir{
-    @include boton_subir
+    @include boton_subir;
+}
+
+/** GALERÍA **/ 
+
+.Txt1{
+    @include div_titulos
+}
+
+.GaleriaFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
