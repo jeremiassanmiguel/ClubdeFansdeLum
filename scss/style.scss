@@ -2,6 +2,7 @@
 @import 'components/variables';
 
 body{
+    
     margin: 0px;
     padding: 0px;
     background: #E0EAFC;  /* fallback for old browsers */
@@ -19,13 +20,13 @@ body{
 
 
 .IndexText1{
-    
-    .ImgIndexText1{
-        border-radius: $estilo-imagen;
-        
-    }
     @include div_titulos
 }
+.ImgIndexText1{
+    border-radius: $estilo-imagen;
+     
+    }
+ 
 
 .IndexText2{
    
@@ -46,14 +47,350 @@ body{
 /** GALERÍA **/ 
 
 .Txt1{
-    @include div_titulos
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Manrope', sans-serif;
+   margin: 60px;
+   text-align: center;
 }
 
 .GaleriaFlex{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin: auto;
+   
+}
+
+.GaleriaFlex img{
+    border-radius: $estilo-imagen;
+margin: 30px;
+}
+
+.DatosCuriosos {
+    padding-right: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: $fuente-principal;
+}
+
+
+
+.DatoTexto{
+    background-image:url("../pages/img/citapng.png");
+    background-position: center;
+    background-size: 100;
+    background-repeat: no-repeat;
+    width:700px;
+    height : 450px;
+    box-sizing: border-box; 
+    padding: 100px 30px 10px 0px;
+    padding-left: 100px;
+    overflow: hidden;
+}
+
+.DatosCuriosos h1{
+    font-size: 50px;
+    font-weight: bolder; 
+}
+
+
+
+.GaleriaVideos{
+    display: grid; 
+    justify-items: flex-start;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "VidGaleria1 VidGaleria2"
+      "VidGaleria3 VidGaleria4"; 
+      
+  }
+  .VidGaleria1 { 
+    grid-area: "VidGaleria1"; }
+  .VidGaleria2
+   { grid-area: "VidGaleria2"; 
+}
+  .VidGaleria3 
+  { grid-area: "VidGaleria3";
+ }
+  .VidGaleria4
+   { grid-area: "VidGaleria4"; 
+}
+
+/** VER ONLINE **/
+
+.IndexVer{
     display: flex;
-    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    font-family: $fuente-principal;
+    margin-bottom: 60px;
+    border-radius: 10px ;
+}
+
+.IndexVer h1{
+    font-size: 50px;
+    font-weight: bolder; 
+}
+
+.TablaComparativaTxT{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bolder; 
+    font-family: $fuente-principal;
+}
+
+.table {
+    font-family: $fuente-principal;
+    background-color:  #bbd4fc;
+    text-align: center;
+    margin: $margin;
+    
+}
+
+.TxtVerOnline{
+    font-family: $fuente-principal;
+    text-align: center;
+    font-size: 25px;
+    margin: $margin;
+}
+
+.ListaRepro1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bolder; 
+    font-family: $fuente-principal;
+    margin: $margin;
+    text-align: center;
+}
+
+.VidVerOnline{
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.VidVerOnline iframe{
+    border-radius: $estilo-imagen;
+    margin: $margin;
+}
 
+.ListaRepro2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder; 
+    font-family: $fuente-principal;
+    margin: $margin;
+}
+
+/** ACERCA **/
+
+.TituloAcerca{
+    @include div_titulos;
+    font-weight: bolder; 
+    margin-bottom: $margin;
+
+}
+
+.TituloAcerca h1{
+    font-size: 60px;
+}
+
+.AcercaTxt{
+    font-family: $fuente-principal;
+    font-size: 25px;
+    margin: 70px;
+    text-align: center;
+}
+
+.Facebook {
+    margin: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    font-family: $fuente-principal;
+    
+}
+
+.Facebook img{
+    border-radius: $estilo-imagen;
+}
+
+.GpsLum {
+    margin: 70px;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   text-align: center;   
+   font-family: $fuente-principal; 
+}
+
+.GpsLum iframe{
+    border-radius: $estilo-imagen;
+}
+
+/** Media Queries **/
+
+@media only screen and (min-width: 998px) {
+   
+    /** INDEX MOBILE **/
+
+   .IndexMobile{
+    display: none;
+}
+
+.ImgIndexText1Mobile{
+    display: none;
+}
+
+.IndexText2Mobile {
+    display: none;
+}
+
+.IndexText2Mobile img{
+    display: none;
+}
+
+.IndexText3Mobile{
+    display: none;
+}
+
+.Txt1Mobile{
+    display: none;
+}
+
+.GaleriaFlexMobile{
+    display: none;
+}
+
+.GaleriaFlexMobile img{
+    display: none;
+}
+
+
+.IndexVerMobile{
+    display: none;
+}
+
+.TituloAcercaMobile{
+    display: none;
+}
+    }
+    
+    @media only screen and (max-width: 576px){
+
+    /** DISPLAY NONES DESKTOP **/
+
+        .Banner{
+            display: none;
+        }
+        .IndexText1{
+            display: none;
+        }
+
+        .IndexText2{
+            display: none;
+        }
+
+        .IndexText3{
+            display: none;
+        }
+
+        /** GALERIA **/
+
+        .GaleriaVideos{
+            display: none;
+        }
+
+        .DatosCuriosos{
+            display: none;
+        }
+
+        .Txt1{
+            display: none;
+        }
+
+        .GaleriaFlex{
+            display: none;
+        }
+
+        .IndexVer{
+            display: none;
+        }
+
+        .table{
+            display: none;
+        }
+        
+        .TablaComparativaTxT{
+            display: none;
+        }
+
+        .TituloAcerca{
+            display: none;
+        }
+
+
+    /** INDEX MOBILE **/
+
+        .IndexMobile{
+            @include div_mobile
+            
+        }
+        .ImgIndexText1Mobile{
+            border-radius: $estilo-imagen;
+        }
+
+        .IndexText2Mobile{
+            @include div_mobile
+        }
+
+        .IndexText2Mobile img{
+            border-radius: $estilo-imagen;
+        }
+
+        .IndexText3Mobile {
+            @include div_mobile
+        }
+
+        /** GALERÍA MOBILE **/
+        
+        .Txt1Mobile{
+            @include div_mobile
+        }
+
+        .GaleriaFlexMobile{
+            @include div_mobile
+        }
+
+        .GaleriaFlexMobile img{
+            border-radius: $estilo-imagen;
+            margin-bottom: 30px;
+        }
+
+        /** VER ONLINE **/
+
+        .IndexVerMobile{
+            @include div_mobile
+        }
+
+        /** ACERCA ONLINE **/
+
+        .TituloAcercaMobile{
+           @include div_mobile
+        }
+    }

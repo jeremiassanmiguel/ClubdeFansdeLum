@@ -21,3 +21,13 @@ font-family: 'Manrope', sans-serif;
   align-items: center;
   text-align: center;
 }
+
+@mixin div_mobile {
+  display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Manrope', sans-serif;
+            margin: 60px;
+            text-align: center;
+}

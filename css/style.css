@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0px;
   padding: 0px;
@@ -19,7 +20,8 @@ body {
   margin: 60px;
   text-align: center;
 }
-.IndexText1 .ImgIndexText1 {
+
+.ImgIndexText1 {
   border-radius: 10px;
 }
 
@@ -34,7 +36,7 @@ body {
 }
 
 .IndexText3 {
-  margin: margin 60px;
+  margin: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,6 +50,353 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+/** GALERÍA **/
+.Txt1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+  margin: 60px;
+  text-align: center;
+}
+
+.GaleriaFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.GaleriaFlex img {
+  border-radius: 10px;
+  margin: 30px;
+}
+
+.DatosCuriosos {
+  padding-right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+}
+
+.DatoTexto {
+  background-image: url("../pages/img/citapng.png");
+  background-position: center;
+  background-size: 100;
+  background-repeat: no-repeat;
+  width: 700px;
+  height: 450px;
+  box-sizing: border-box;
+  padding: 100px 30px 10px 0px;
+  padding-left: 100px;
+  overflow: hidden;
+}
+
+.DatosCuriosos h1 {
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.GaleriaVideos {
+  display: grid;
+  justify-items: flex-start;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "VidGaleria1 VidGaleria2" "VidGaleria3 VidGaleria4";
+}
+
+.VidGaleria1 {
+  grid-area: "VidGaleria1";
+}
+
+.VidGaleria2 {
+  grid-area: "VidGaleria2";
+}
+
+.VidGaleria3 {
+  grid-area: "VidGaleria3";
+}
+
+.VidGaleria4 {
+  grid-area: "VidGaleria4";
+}
+
+/** VER ONLINE **/
+.IndexVer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+  margin-bottom: 60px;
+  border-radius: 10px;
+}
+
+.IndexVer h1 {
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.TablaComparativaTxT {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: "Manrope", sans-serif;
+}
+
+.table {
+  font-family: "Manrope", sans-serif;
+  background-color: #bbd4fc;
+  text-align: center;
+  margin: 60px;
+}
+
+.TxtVerOnline {
+  font-family: "Manrope", sans-serif;
+  text-align: center;
+  font-size: 25px;
+  margin: 60px;
+}
+
+.ListaRepro1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: "Manrope", sans-serif;
+  margin: 60px;
+  text-align: center;
+}
+
+.VidVerOnline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.VidVerOnline iframe {
+  border-radius: 10px;
+  margin: 60px;
+}
+
+.ListaRepro2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: "Manrope", sans-serif;
+  margin: 60px;
+}
+
+/** ACERCA **/
+.TituloAcerca {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+  margin: 60px;
+  text-align: center;
+  font-weight: bolder;
+  margin-bottom: 60px;
+}
+
+.TituloAcerca h1 {
+  font-size: 60px;
+}
+
+.AcercaTxt {
+  font-family: "Manrope", sans-serif;
+  font-size: 25px;
+  margin: 70px;
+  text-align: center;
+}
+
+.Facebook {
+  margin: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+}
+
+.Facebook img {
+  border-radius: 10px;
+}
+
+.GpsLum {
+  margin: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+}
+
+.GpsLum iframe {
+  border-radius: 10px;
+}
+
+/** Media Queries **/
+@media only screen and (min-width: 998px) {
+  /** INDEX MOBILE **/
+  .IndexMobile {
+    display: none;
+  }
+  .ImgIndexText1Mobile {
+    display: none;
+  }
+  .IndexText2Mobile {
+    display: none;
+  }
+  .IndexText2Mobile img {
+    display: none;
+  }
+  .IndexText3Mobile {
+    display: none;
+  }
+  .Txt1Mobile {
+    display: none;
+  }
+  .GaleriaFlexMobile {
+    display: none;
+  }
+  .GaleriaFlexMobile img {
+    display: none;
+  }
+  .IndexVerMobile {
+    display: none;
+  }
+  .TituloAcercaMobile {
+    display: none;
+  }
+}
+@media only screen and (max-width: 576px) {
+  /** DISPLAY NONES DESKTOP **/
+  .Banner {
+    display: none;
+  }
+  .IndexText1 {
+    display: none;
+  }
+  .IndexText2 {
+    display: none;
+  }
+  .IndexText3 {
+    display: none;
+  }
+  /** GALERIA **/
+  .GaleriaVideos {
+    display: none;
+  }
+  .DatosCuriosos {
+    display: none;
+  }
+  .Txt1 {
+    display: none;
+  }
+  .GaleriaFlex {
+    display: none;
+  }
+  .IndexVer {
+    display: none;
+  }
+  .table {
+    display: none;
+  }
+  .TablaComparativaTxT {
+    display: none;
+  }
+  .TituloAcerca {
+    display: none;
+  }
+  /** INDEX MOBILE **/
+  .IndexMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Manrope", sans-serif;
+    margin: 60px;
+    text-align: center;
+  }
+  .ImgIndexText1Mobile {
+    border-radius: 10px;
+  }
+  .IndexText2Mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Manrope", sans-serif;
+    margin: 60px;
+    text-align: center;
+  }
+  .IndexText2Mobile img {
+    border-radius: 10px;
+  }
+  .IndexText3Mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Manrope", sans-serif;
+    margin: 60px;
+    text-align: center;
+  }
+  /** GALERÍA MOBILE **/
+  .Txt1Mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Manrope", sans-serif;
+    margin: 60px;
+    text-align: center;
+  }
+  .GaleriaFlexMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Manrope", sans-serif;
+    margin: 60px;
+    text-align: center;
+  }
+  .GaleriaFlexMobile img {
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  /** VER ONLINE **/
+  .IndexVerMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Manrope", sans-serif;
+    margin: 60px;
+    text-align: center;
+  }
+  /** ACERCA ONLINE **/
+  .TituloAcercaMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Manrope", sans-serif;
+    margin: 60px;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
