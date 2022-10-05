@@ -222,7 +222,7 @@ body {
 }
 
 .Facebook {
-  margin: 70px;
+  margin: 60px;
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -234,10 +234,34 @@ body {
   border-radius: 10px;
 }
 
+.Formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px;
+}
+
+.CajaFormulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #bbd4fc;
+  border-radius: 50px;
+  height: 50vh;
+  width: 50vh;
+  margin: 50px;
+}
+
+.CajaFormulario h1 {
+  font-family: "Manrope", sans-serif;
+}
+
 .GpsLum {
   margin: 70px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   font-family: "Manrope", sans-serif;

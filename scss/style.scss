@@ -216,8 +216,9 @@ margin: 30px;
     text-align: center;
 }
 
+
 .Facebook {
-    margin: 70px;
+    margin: 60px;
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -230,10 +231,35 @@ margin: 30px;
     border-radius: $estilo-imagen;
 }
 
+.Formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: $margin;
+}
+
+.CajaFormulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #bbd4fc;
+    border-radius: 50px;
+    height:50vh;
+    width: 50vh;
+    margin: 50px;
+}
+
+.CajaFormulario h1{
+    font-family: $fuente-principal;
+
+}
+
 .GpsLum {
     margin: 70px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
    align-items: center;
    text-align: center;   
    font-family: $fuente-principal; 
@@ -242,6 +268,12 @@ margin: 30px;
 .GpsLum iframe{
     border-radius: $estilo-imagen;
 }
+
+
+
+
+
+
 
 /** Media Queries **/
 
@@ -289,6 +321,7 @@ margin: 30px;
 .TituloAcercaMobile{
     display: none;
 }
+
     }
     
     @media only screen and (max-width: 576px){
