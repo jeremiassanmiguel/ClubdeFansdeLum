@@ -198,6 +198,24 @@ body {
   margin: 60px;
 }
 
+.CapRemake {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.CapRemake p {
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: "Manrope", sans-serif;
+}
+
+.CapRemake iframe {
+  border-radius: 10px;
+  margin: 60px;
+}
+
 /** ACERCA **/
 .TituloAcerca {
   display: flex;

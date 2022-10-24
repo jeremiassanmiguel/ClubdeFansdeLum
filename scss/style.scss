@@ -196,6 +196,22 @@ margin: 30px;
     margin: $margin;
 }
 
+.CapRemake {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.CapRemake p{
+    font-size: 30px;
+    font-weight: bolder; 
+    font-family: $fuente-principal;
+}
+
+.CapRemake iframe {
+    border-radius: $estilo-imagen;
+    margin: $margin;
+}
 /** ACERCA **/
 
 .TituloAcerca{
